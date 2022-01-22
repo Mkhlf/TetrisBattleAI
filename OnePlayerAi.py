@@ -12,7 +12,7 @@ def score1(board):
     hights, std1 = m_d_hight(board)
     NumHoles, clear1 = n_holes(board)
 
-    return 0.4*(NumHoles) + -.3*std1 + 0.22*(hights.max() - hights.min()) + -clear1
+    return 0.7*(NumHoles) + -.1*std1 + 0.4*(hights.max() - hights.min()) + -0.7clear1
 
 # checks what rows would be cleard from the passed board then returns them as well as an assigned score on them based on if there is a tetris (4-rows) or not 
 
@@ -30,8 +30,8 @@ def clearr(board):
             line += 1
             lines.append(j)
     if line >= 4:
-        return int(((line % 4) + (line//4 ** 4)) *25), lines ## returns the score, the lines array
-    return int(line * 25), lines
+        return int(((line % 4) + (line//4 ** 4))), lines ## returns the score, the lines array
+    return int(line), lines
 
 # a function that counts the number of holes in the board
 
