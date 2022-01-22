@@ -1,6 +1,6 @@
 # **TetrisBattle SinglePlayerAI**
 
-This Ai (OnePlayerAi.py) - [Demo](#**Demo**)- is made to work with this version of Tetris. I edited some of main projects files: the settings.py, tetris_interface.py, tetris.py, tetris.env to better fit the provided AI. To run the projects follow [this](#***requirements***).
+This Ai (OnePlayerAi.py) - [Demo](#**Demo**)- is made to work with this version of Tetris. I edited some of main projects files: the settings.py, tetris_interface.py, tetris.py, tetris.env to better fit the provided AI. To run the project follow [this](#***requirements***).
 
 
 
