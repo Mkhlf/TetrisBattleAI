@@ -1,6 +1,6 @@
 # **TetrisBattle SinglePlayerAI**
 
-This Ai (OnePlayerAi.py) - [here is a demo](#demo) - is made to work with this version of Tetris. I edited some of main projects files: the settings.py, tetris_interface.py, tetris.py, tetris.env to better fit the provided AI. To run the project follow [this](#requirements).
+This Ai (OnePlayerAi.py) - [here is a demo](#demo) - is made to work with this version of Tetris. I edited some of main project files: the settings.py, tetris_interface.py, tetris.py, tetris.env to better fit the provided AI. To run the project follow [this](#requirements).
 
 
 
@@ -17,7 +17,7 @@ It is a highly restored version of original game, with features as follow: <br/>
 - garbage lines <br/>
 - alarm for attacks <br/>
 
-Note that some of them are credited to https://github.com/xuyuwei/tetris-battle. and to https://github.com/ylsung/TetrisBattle
+Note that the main game is credited to https://github.com/xuyuwei/tetris-battle and to https://github.com/ylsung/TetrisBattle, this project mainly adds an AI that can play the main game.
 
 The repository contains:
 
