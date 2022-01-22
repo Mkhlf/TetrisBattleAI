@@ -12,7 +12,7 @@ def score1(board):
     hights, std1 = m_d_hight(board)
     NumHoles, clear1 = n_holes(board)
 
-    return 0.774*(NumHoles) + -.48*std1 + 0.8*(hights.max() - hights.min()) + -0.7*clear1
+    return 0.82*(NumHoles) + -.48*std1 + 0.8*(hights.max() - hights.min()) + -0.7*clear1
 
 # checks what rows would be cleard from the passed board then returns them as well as an assigned score on them based on if there is a tetris (4-rows) or not 
 
@@ -506,6 +506,8 @@ def CreatAllMovesD2 (grid, Pl, NextIndex):
 
 def step(action):
     # A function that plays the current move @action
+    env.step(0)
+    env.step(0)
     env.step(0)
     return env.step(action)
 
