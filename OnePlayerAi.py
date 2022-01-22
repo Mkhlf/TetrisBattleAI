@@ -12,7 +12,7 @@ def score1(board):
     hights, std1 = m_d_hight(board)
     NumHoles, clear1 = n_holes(board)
 
-    return 0.4*(NumHoles) + -.3*2 + 0.22*(hights.max() - hights.min()) + -clear1
+    return 0.4*(NumHoles) + -.3*std1 + 0.22*(hights.max() - hights.min()) + -clear1
 
 # checks what rows would be cleard from the passed board then returns them as well as an assigned score on them based on if there is a tetris (4-rows) or not 
 
@@ -66,13 +66,10 @@ def m_d_hight(board):
     return hights, hights.std()
 
 
-def step(action):
-    # A function that plays the current move @action
-    env.step(0)
-    return env.step(action)
 
-
-          
+# A function that takes the current grid, the pieces list, and the current depth in the evaluating tree
+# as it stop at depth when the depth 1. it returns a sorted array with all the possible moves and 
+# their scores 
 def CreatAllMovesD2 (grid, Pl, NextIndex):
     piecer = Pl [NextIndex]
     hights, std1 =  m_d_hight(grid)
@@ -507,7 +504,10 @@ def CreatAllMovesD2 (grid, Pl, NextIndex):
     steps.sort()
     return steps
 
-
+def step(action):
+    # A function that plays the current move @action
+    env.step(0)
+    return env.step(action)
 
 if __name__ == "__main__":
 
