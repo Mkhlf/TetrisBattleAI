@@ -1,13 +1,13 @@
 # **TetrisBattle SinglePlayerAI**
 
-This Ai (OnePlayerAi.py) - [here is a demo](#demo) - is made to work with this version of Tetris. I edited some of main project files: the settings.py, tetris_interface.py, tetris.py, tetris.env to better fit the provided AI. To run the project follow [this](#requirements).
+This Ai (OnePlayerAi.py) - [here is a demo](#demo) - is made to work with this version of Tetris. I edited some of main project files: the settings.py, tetris_interface.py, tetris.py, tetris.env to better fit the provided AI. To run follow [this](#requirements).
 
 
 
 
 # **TetrisBattle The game**
 
-This project is to reproduce the popular Facebook game -- Tetris Battle (Not available playing online now). I also offer the environment of the game for training AI agent.
+The orginal project is to reproduce the popular Facebook game -- Tetris Battle (Not available playing online now). I also offer the environment of the game for training AI agent.
 
 It is a highly restored version of original game, with features as follow: <br/>
 - 2 players <br/>
